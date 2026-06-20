@@ -9,14 +9,14 @@
 
 var DATA = {
   portfolio: {
-    
+
     hero: {
       name: "Gonzalo Dormos Rodríguez",
       title: "Backend Developer | Mobile & Web Applications",
       techs: "Node.js • FastAPI • React • Ionic",
       image: "assets/Foto.png",
       cvLink: "#",
-      projectLink: "#proyectos"
+      projectLink: "#projects"
     },
 
     stats: [
@@ -34,7 +34,6 @@ var DATA = {
       { category: "Mobile", items: "React/React Native<br>Ionic Framework+Angular" },
       { category: "Tools", items: "Git/GitHub<br>Firebase<br>Supabase" }
     ],
-
     /**
      * Cada proyecto de la lista principal debe tener:
      *  - id:          identificador único (debe coincidir con la clave en DATA.projects)
