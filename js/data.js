@@ -8,12 +8,8 @@
  */
 
 var DATA = {
-
-  /* ================================================================
-     PÁGINA PRINCIPAL
-  ================================================================ */
   portfolio: {
-
+    
     hero: {
       name: "Gonzalo Dormos Rodríguez",
       title: "Backend Developer | Mobile & Web Applications",
