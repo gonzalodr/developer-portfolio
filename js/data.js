@@ -56,7 +56,7 @@ var DATA = {
         description: "Backend para red social gastronómica con gestión de usuarios, feeds y relaciones.",
         techs: ["Node.js", "Prisma", "Supabase","Swagger docs"],
         link: "projects/index.html?id=ploons",
-        coverImage: "../assets/project/ploons.png",
+        coverImage: "./assets/project/ploons.png",
         coverBg: "bg-gradient-to-br from-blue-100 to-indigo-200"
       }
     ],
