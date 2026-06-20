@@ -1,8 +1,3 @@
-/**
- * main.js — Lógica de la página principal (index.html).
- * Requiere: js/data.js cargado antes que este script.
- */
-
 (function () {
   const data = DATA.portfolio;
 
@@ -59,7 +54,7 @@
     </div>
   `;
 
-  /* ── PROYECTOS ────────────────────────────────────────────────── */
+  /* ── PROJECTS ────────────────────────────────────────────────── */
   document.getElementById("projects").innerHTML = `
     <h2 class="text-3xl font-bold mb-10 text-gray-800">Proyectos</h2>
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
