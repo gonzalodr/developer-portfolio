@@ -19,10 +19,10 @@
            class="rounded-full bg-gray-900 px-6 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">
           Ver Proyectos
         </a>
-        <a href="${data.hero.cvLink}"
+        <!-- <a href="${data.hero.cvLink}"
            class="rounded-full border-2 border-gray-200 px-6 py-2 text-sm font-semibold text-gray-600 hover:border-blue-500 hover:text-blue-500 transition">
           Descargar CV
-        </a>
+        </a> -->
       </div>
     </div>
   `;
