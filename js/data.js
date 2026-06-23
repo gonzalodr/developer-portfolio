@@ -9,24 +9,22 @@
 
 var DATA = {
   portfolio: {
-
     hero: {
       name: "Gonzalo Dormos Rodríguez",
-      title: "Backend Developer | Mobile & Web Applications",
+      title: "Backend & Frontend  Developer | Mobile & Web Applications",
       techs: "Node.js • FastAPI • React • Ionic",
       image: "assets/Foto.png",
       cvLink: "#",
       projectLink: "#projects"
     },
-
     stats: [
-      { number: "3", label: "Proyectos" },
-      { number: "1", label: "APIs desplegadas" },
-      { number: "6", label: "Tecnologías Backend" },
-      { number: "SoC", label: "Arquitecturas" }
+      { number: "3", label: "Projects" },
+      { number: "1", label: "Deployed APIs" },
+      { number: "5+", label: "Backend and Frontend Technologies" },
+      { number: "SoC", label: "Architectures" }
     ],
 
-    about: "Desarrollador Full-Stack orientado principalmente a la lógica e infraestructura backend, con la versatilidad necesaria para construir y mantener interfaces de usuario estables. Aporto valor en el diseño modular de arquitecturas, modelado de datos con Supabase y Prisma, e integración de servicios externos. En el lado frontend, participo de manera efectiva en la implementación técnica de vistas y componentes utilizando frameworks modernos. Mi objetivo es aplicar buenas prácticas de desarrollo para resolver problemas lógicos con claridad, proporcionando código eficiente y escalable para los productos de la empresa.",
+    about: "Full-Stack Developer primarily focused on backend logic and infrastructure, with the versatility to build and maintain stable user interfaces. I contribute to the modular design of architectures, data modeling with Supabase and Prisma, and the integration of external services. On the frontend side, I actively participate in the technical implementation of views and components using modern frameworks. My goal is to apply best development practices to solve logical problems clearly, delivering efficient and scalable code for the company's products.",
 
     stack: [
       { category: "Backend", items: "Node.js<br>FastAPI" },
@@ -48,7 +46,7 @@ var DATA = {
       {
         id: "ploons",
         title: "Ploons API",
-        description: "Backend para red social gastronómica con gestión de usuarios, feeds y relaciones.",
+        description: "Backend for a gastronomic social network with user management, feeds and relationships.",
         techs: ["Node.js", "Prisma", "Supabase", "Swagger docs"],
         link: "projects/index.html?id=ploons",
         coverImage: "./assets/project/ploons.png",
@@ -57,7 +55,7 @@ var DATA = {
       {
         id: "kanuxfrontend",
         title: "Kánux Frontend",
-        description: "Desarrollo colaborativo de la interfaz web y móvil para una plataforma de vinculación laboral adaptada a microservicios.",
+        description: "Collaborative development of the web and mobile interface for a job placement platform adapted to microservices.",
         techs: ["React+Next.js", "React Native", "TailwindCSS", "TypeScript"],
         link: "projects/index.html?id=kanuxfrontend",
         coverImage: "./assets/project/kanuxfrontend.png",
@@ -66,7 +64,7 @@ var DATA = {
       {
         id: "kanuxbackend",
         title: "Kánux Backend",
-        description: "Co-diseño y desarrollo de infraestructura basada en microservicios, lógica de negocio y validación de retos.",
+        description: "Co-design and development of microservices-based infrastructure, business logic, and challenge validation.",
         techs: ["Node.js", "Prisma", "Supabase", "Cloudinary", "Microservices", "JWT"],
         link: "projects/index.html?id=kanuxbackend",
         coverImage: "./assets/project/kanuxbackend.png",
@@ -75,17 +73,17 @@ var DATA = {
     ],
 
     cta: {
-      title: "¿Trabajamos juntos?",
-      subtitle: "Abierto a oportunidades laborales de tiempo completo y colaboración en proyectos tecnológicos.",
-      email: "mailto:gonzalodormos26@gmail.com"
+      title: "Shall we work together?",
+      subtitle: "Open to full-time job opportunities and collaboration on technology projects.",
+      email: "gonzalodormos26@gmail.com"
     },
 
     footer: {
-      name: "Gonzalo Dormos Rodríguez",
-      location: "Costa Rica",
+      name: "Gonzalo Alberto Dormos Rodríguez",
+      location: "Costa Rica, Heredia.",
       github: "https://github.com/gonzalodr",
       linkedin: "https://www.linkedin.com/in/gonzalo-dormos-r",
-      email: "mailto:gonzalodormos26@gmail.com"
+      email: "gonzalodormos26@gmail.com"
     }
   },
 
@@ -93,46 +91,46 @@ var DATA = {
     ploons: {
       id: "ploons",
       title: "PLOONS API",
-      subtitle: "Red social gastronómica en tiempo real",
+      subtitle: "Real-time gastronomic social network",
       coverImage: "../assets/project/ploons.png",
       coverBg: "bg-gradient-to-br from-blue-100 to-indigo-200",
       github: "https://github.com/gonzalodr/ploons-api",
       githubMobil: null,
       demo: null,
       wiki: "https://deepwiki.com/gonzalodr/ploons-api",
-      description: "Ploons API es el backend completo de una red social enfocada en el mundo gastronómico. Permite a los usuarios crear perfiles, publicar recetas, comentar, dar 'me gusta' y seguir a otros chefs. La API está diseñada siguiendo principios RESTful y maneja autenticación segura con JWT, subida de imágenes y un sistema de feeds optimizado.",
+      description: "Ploons API is the complete backend for a social network focused on the culinary world. It allows users to create profiles, publish recipes, comment, like, and follow other chefs. The API is designed using RESTful principles and handles secure authentication with JWT, image uploads, and an optimized feed system.",
       features: [
-        "Registro y autenticación de usuarios con Supabase Auth",
-        "CRUD completo de publicaciones y recetas",
-        "Sistema de 'me gusta' y comentarios anidados",
-        "Feed personalizado",
-        "Búsqueda avanzada por ingredientes y etiquetas",
+        "User registration and authentication with Supabase Auth",
+        "Full CRUD functionality for posts and recipes",
+        "Nested likes and comments system",
+        "Custom feed",
+        "Advanced search by ingredients and tags"
       ],
       detailedTechs: ["Node.js", "Express", "Prisma ORM", "PostgreSQL", "Supabase", "Socket.io", "Supabase Auth", "Cloudinary"],
-      challenge: "El principal desafío fue garantizar la consistencia de los datos en un sistema con alta concurrencia (muchos usuarios interactuando al mismo tiempo) y mantener un rendimiento óptimo en el feed personalizado, que requería unir múltiples tablas y filtrar por relaciones de seguimiento.",
-      solution: "Se implementó una estrategia de caché con Redis para almacenar los feeds más consultados, se optimizaron las consultas SQL con índices específicos en las tablas de relaciones (seguidores y publicaciones) y se utilizó Prisma para manejar las transacciones complejas de manera eficiente, reduciendo el tiempo de respuesta de 800ms a 120ms."
+      challenge: "The main challenge was to ensure data consistency in a system with high concurrency (many users interacting at the same time) and maintain optimal performance in the custom feed, which required joining multiple tables and filtering by tracking relationships.",
+      solution: "An optimization strategy for SQL queries was implemented with specific indexes on the relationship tables (followers and posts) and Prisma was used to efficiently handle complex transactions."
     },
     kanuxfrontend: {
       id: "kanuxfrontend",
       title: "Kánux Frontend",
-      subtitle: "Ecosistema web y móvil para validación de talento técnico",
+      subtitle: "Web and mobile ecosystem for talent validation.",
       coverImage: "../assets/project/kanuxfrontend.png",
       coverBg: "bg-gradient-to-br from-purple-100 to-indigo-200",
       github: "https://github.com/AaronMatarrita/kanux-frontend-web",
       githubMobil: "https://github.com/AaronMatarrita/kanux-frontend-mobile",
       demo: null,
       wiki: null,
-      description: "Desarrollo colaborativo de la capa de presentación de Kánux, compuesta por una aplicación web robusta construida con React y Next.js para empresas y una aplicación móvil nativa con React Native para postulantes. El trabajo en equipo se enfocó en acoplar estas interfaces de manera eficiente con un backend distribuido en microservicios, asegurando una experiencia de usuario fluida y reactiva al consumir la API Gateway.",
+      description: "Collaborative development of the Kanux presentation layer, consisting of a robust web application built with React and Next.js and a native mobile application with React Native. The teamwork focused on efficiently integrating these interfaces with a microservices-based distributed backend, ensuring a smooth and responsive user experience when consuming the API Gateway.",
       features: [
-        "Colaboración en la interfaz web SPA/SSR optimizada con Next.js y TailwindCSS para clientes corporativos",
-        "Participación en la aplicación móvil en React Native adaptada para el seguimiento de perfiles y retos",
-        "Consumo asíncrono y sincronizado de la API Gateway mediante Axios / TanStack Query",
-        "Maquetación técnica de dashboards interactivos para la visualización de métricas de desempeño",
-        "Integración del entorno del editor de código en web para el envío de soluciones en tiempo real"
+        "Collaboration on the optimized web interface with Next.js and Tailwind CSS for corporate clients and talent.",
+        "Participation in the mobile application built with React Native, adapted for tracking profiles and challenges.",
+        "Asynchronous and synchronized consumption of the API Gateway using Axios.",
+        "Technical layout of interactive dashboards for visualizing performance metrics.",
+        "Integration of the code editor environment into the web for submitting solutions in real time."
       ],
       detailedTechs: ["TypeScript", "React", "Next.js", "React Native", "TailwindCSS", "Axios", "TanStack Query", "Git / GitHub Collaboration"],
-      challenge: "El reto principal a nivel de equipo fue establecer flujos de trabajo limpios y asegurar que la gestión del estado global coincidiera con la naturaleza distribuida del backend, garantizando que la expiración y renovación de los tokens JWT ocurriera transparentemente en ambas plataformas cliente.",
-      solution: "Se trabajó de manera conjunta para configurar interceptores globales en Axios conectados a soluciones robustas de almacenamiento seguro (Zustand + SecureStore en mobile y Cookies HTTP-only en Next.js), logrando un control de sesiones unificado que evita interrupciones en la experiencia de usuario.",
+      challenge: "The main challenge at the team level was to establish clean workflows and ensure that global state management matched the distributed nature of the backend, guaranteeing that the expiration and renewal of JWT tokens occurred transparently on both client platforms, as well as handling instant messaging.",
+      solution: "We worked together to configure global interceptors in Axios connected to robust secure storage solutions (Zustan + SecureStore on mobile in Next.js), achieving unified session control that prevents interruptions to the user experience. We also used tools to manage the integrated code editor and sockets for instant messaging.",
     },
     kanuxbackend: {
       id: "kanuxbackend",
@@ -144,18 +142,18 @@ var DATA = {
       githubMobil: null,
       demo: null,
       wiki: null,
-      description: "Co-diseño y desarrollo de la infraestructura backend central de la plataforma Kánux, estructurada bajo un enfoque modular de microservicios independientes. El desarrollo se centró en la creación de servicios desacoplados encargados de procesar la lógica de negocio, persistencia de datos con Prisma y Supabase, almacenamiento con Cloudinary, y la seguridad global del sistema mediante flujos de autenticación estrictos.",
+      description: "Co-design and development of the core backend infrastructure for the Kánux platform, structured under a modular approach of independent microservices. Development focused on creating decoupled services responsible for processing business logic, data persistence with Prisma and Supabase, storage with Cloudinary, and overall system security through strict authentication flows.",
       features: [
-        "Participación en el diseño de la arquitectura modular basada en microservicios conectados por un API Gateway",
-        "Implementación de mecanismos centralizados de autenticación y autorización mediante tokens JWT",
-        "Diseño colaborativo del modelo de base de datos relacional y migraciones con Prisma ORM sobre Supabase",
-        "Integración del servicio de almacenamiento y optimización de activos multimedia mediante Cloudinary",
-        "Desarrollo de lógica para el aislamiento y validación automatizada de pruebas técnicas enviadas por usuarios",
-        "Estructuración de servicios de procesamiento analítico para la optimización del filtrado de CVs"
+        "Participation in the design of the modular architecture based on microservices connected by an API Gateway",
+        "Implementation of centralized authentication and authorization mechanisms using JWT tokens",
+        "Collaborative design of the relational database model and migrations with Prisma ORM on Supabase",
+        "Integration of the storage service and optimization of multimedia assets using Cloudinary",
+        "Development of logic for the isolation and automated validation of technical tests submitted by users",
+        "Structuring of analytical processing services for the optimization of skills-based filtering"
       ],
       detailedTechs: ["Node.js", "TypeScript", "Express / NestJS", "Prisma ORM", "Supabase", "Cloudinary", "Microservices Architecture", "JWT Auth"],
-      challenge: "El desafío crítico del equipo fue diseñar un ecosistema distribuido altamente escalable que aislara con éxito las operaciones comunes de la plataforma de los procesos intensivos, como la carga masiva de archivos adjuntos (CVs, imágenes) y el procesamiento de código en tiempo real.",
-      solution: "Se estructuró el backend dividiendo responsabilidades en contenedores lógicos independientes; se usó Prisma para consultas transaccionales optimizadas y se delegó la carga de recursos multimedia a Cloudinary mediante firmas seguras desde el servidor. El tráfico se centralizó a través de un API Gateway compartido que procesa la autenticación JWT tempranamente, aliviando la carga de los microservicios internos."
+      challenge: "The team's critical challenge was to design a highly scalable distributed ecosystem that successfully isolated common platform operations from intensive processes, such as bulk uploading of attachments and real-time code processing.",
+      solution: "The backend was structured by dividing responsibilities into independent logical containers; Prisma was used for optimized transactional queries, and the loading of multimedia resources was delegated to Cloudinary. Traffic was centralized through a shared API Gateway that processes JWT authentication early on, relieving the load on internal microservices."
     }
   }
 };

@@ -56,7 +56,7 @@
 
   /* ── SUMMARY ───────────────────────────────────────────────── */
   document.getElementById("project-description").innerHTML = `
-    <h2 class="text-2xl font-bold border-b-4 border-amber-400 w-fit mb-4">Descripción del Proyecto</h2>
+    <h2 class="text-2xl font-bold border-b-4 border-amber-400 w-fit mb-4">Project Description</h2>
     <p class="text-gray-600 leading-relaxed">${project.description}</p>
   `;
 
@@ -64,7 +64,7 @@
   const featuresEl = document.getElementById("project-features");
   if (project.features && project.features.length) {
     featuresEl.innerHTML = `
-      <h2 class="text-2xl font-bold border-b-4 border-amber-400 w-fit mb-4">Características Principales</h2>
+      <h2 class="text-2xl font-bold border-b-4 border-amber-400 w-fit mb-4">Main Features</h2>
       <ul class="grid sm:grid-cols-2 gap-3 list-disc list-inside text-gray-600">
         ${project.features.map(f => `<li class="marker:text-blue-500">${f}</li>`).join("")}
       </ul>
@@ -77,7 +77,7 @@
   const techsEl = document.getElementById("project-techs");
   if (project.detailedTechs && project.detailedTechs.length) {
     techsEl.innerHTML = `
-      <h2 class="text-2xl font-bold border-b-4 border-amber-400 w-fit mb-4">Stack Tecnológico usado</h2>
+      <h2 class="text-2xl font-bold border-b-4 border-amber-400 w-fit mb-4">Technology Stack Used</h2>
       <div class="flex flex-wrap gap-3">
         ${project.detailedTechs.map(t =>
       `<span class="bg-blue-50 text-blue-700 font-medium text-sm px-4 py-2 rounded-full shadow-sm border border-blue-100">${t}</span>`
@@ -95,13 +95,13 @@
       <div class="grid sm:grid-cols-2 gap-8">
         <div>
           <h3 class="text-xl font-bold text-red-600 flex items-center gap-2">
-            Desafío
+            Challenge
           </h3>
           <p class="text-gray-600 mt-2 leading-relaxed">${project.challenge || "No especificado"}</p>
         </div>
         <div>
           <h3 class="text-xl font-bold text-green-600 flex items-center gap-2">
-            Solución
+            Solution
           </h3>
           <p class="text-gray-600 mt-2 leading-relaxed">${project.solution || "No especificada"}</p>
         </div>
@@ -122,7 +122,7 @@
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
             </svg>
-            Ver código en GitHub
+            View code on GitHub
           </a>
         ` : ""}
         ${project.wiki ? `
@@ -131,7 +131,7 @@
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
             </svg>
-            Ver documentación
+            View documentation code
           </a>
         ` : ""}
         ${project.githubMobil ? `
@@ -140,7 +140,7 @@
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
             </svg>
-            Ver código móvil en Git
+            View mobile code on GitHub
           </a>
         ` : ""}
         ${project.demo ? `
@@ -149,7 +149,7 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
             </svg>
-            Ver Demo en vivo
+            Watch Live Demo
           </a>
         ` : ""}
       </div>

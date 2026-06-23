@@ -17,7 +17,7 @@
       <div class="mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
         <a href="${data.hero.projectLink}"
            class="rounded-full bg-gray-900 px-6 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">
-          Ver Proyectos
+          View Projects
         </a>
         <!-- <a href="${data.hero.cvLink}"
            class="rounded-full border-2 border-gray-200 px-6 py-2 text-sm font-semibold text-gray-600 hover:border-blue-500 hover:text-blue-500 transition">
@@ -37,13 +37,13 @@
 
   /* ── ABOUT ────────────────────────────────────────────────────── */
   document.getElementById("about").innerHTML = `
-    <h2 class="text-3xl font-bold border-b-4 border-amber-400 w-fit mb-6">Sobre mí</h2>
+    <h2 class="text-3xl font-bold border-b-4 border-amber-400 w-fit mb-6">About me</h2>
     <p class="text-lg text-gray-600 leading-relaxed">${data.about}</p>
   `;
 
   /* ── STACK ────────────────────────────────────────────────────── */
   document.getElementById("stack").innerHTML = `
-    <h2 class="text-3xl font-bold mb-8 text-gray-800">Stack Tecnológico</h2>
+    <h2 class="text-3xl font-bold mb-8 text-gray-800">Technology Stack</h2>
     <div class="grid sm:grid-cols-4 gap-6">
       ${data.stack.map(item => `
         <div class="bg-white p-6 shadow">
@@ -59,7 +59,6 @@
     <h2 class="text-3xl font-bold mb-10 text-gray-800">Proyectos</h2>
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       ${data.projects.map(proj => {
-        // Imagen de portada: si existe, usarla; si no, mostrar gradiente de fallback
         const cover = proj.coverImage
           ? `<img
                src="${proj.coverImage}"
@@ -94,9 +93,9 @@
   document.getElementById("cta").innerHTML = `
     <h2 class="text-3xl font-bold">${data.cta.title}</h2>
     <p class="mt-3 text-blue-100">${data.cta.subtitle}</p>
-    <a href="${data.cta.email}"
+    <a href="mailto:${data.cta.email}"
        class="inline-block mt-6 bg-white text-blue-700 font-semibold px-6 py-3 rounded-full hover:shadow-lg transition">
-      Contactarme
+      Contact me
     </a>
   `;
 
@@ -109,7 +108,7 @@
     <div class="flex gap-6 flex-wrap">
       <a href="${data.footer.github}"  class="text-gray-400 hover:text-white transition">GitHub</a>
       <a href="${data.footer.linkedin}" class="text-gray-400 hover:text-white transition">LinkedIn</a>
-      <a href="${data.footer.email}"   class="text-amber-400 font-semibold hover:underline">Email</a>
+      <a href="mailto:${data.footer.email}"class="text-amber-400 font-semibold hover:underline">${data.footer.email}</a>
     </div>
   `;
 })();
