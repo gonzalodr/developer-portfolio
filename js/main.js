@@ -98,6 +98,7 @@
       Contact me
     </a>
   `;
+  
 
   /* ── FOOTER ───────────────────────────────────────────────────── */
   document.getElementById("footer").innerHTML = `
